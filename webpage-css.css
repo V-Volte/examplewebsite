@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    scrollbar-width: 10px;
+    scrollbar-color: rgb(200, 200, 200) rgb(30, 30, 30);
+    color: inherit;
+    background-color: inherit;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    margin-left: 5px;
+}
+
+::-webkit-scrollbar-track {}
+
+::-webkit-scrollbar-thumb {
+    background-color: #eee;
+    border-radius: 15px;
+}
+
+body {
+    color: rgb(200, 200, 200);
+    background-color: rgb(30, 30, 30);
+    font-family: "Arial";
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+h1 {
+    font-decoration: none;
+    font-family: "Segoe UI Light";
+    margin: 10px;
+    padding: 10px;
+}
+
+p {
+    margin: 10px;
+}
+
+.button1 {
+    display: inline-block;
+    background-color: transparent;
+    color: white;
+    margin: 5px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 13px;
+    border: 2px;
+    border-style: solid;
+    border-color: white;
+    transition: 0.5s;
+    text-decoration: none;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.button1:hover {
+    background-color: white;
+    border-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.hlst {
+    background-color: inherit;
+    height: 56px;
+    padding-top: 0;
+    margin-top: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    align: center;
+    position: center;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    line-height: 50px;
+    align: center;
+    padding-top: 5px;
+    width: 55px;
+    cursor: pointer;
+    transition: 0.5s;
+    /*border-color: #eee;
+    border-bottom: 4px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;*/
+}
+
+.hlst:hover {
+    color: white;
+    background-color: black;
+}
+
+.alef {
+    background-image: url(https://images.arcadis.com/media/3/1/3/%7B313057E5-A615-4930-8F21-03C355B78953%7DElectricalEngineeringMain-2000x995.jpg?width=1920&height=0&mode=crop&anchor=top);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    transition: 0.5s;
+    transition: background-image 0.5s ease-in-out;
+    -moz-transition: background-image 0.5s ease-in-out;
+}
+
+.openheader {
+    color: rgb(200, 200, 200);
+    padding: 0px;
+    padding-right: 10px;
+    width: 100%;
+    height: 60px;
+    display: block;
+    font-size: 30px;
+    /* background-color: rgb(100, 100, 100); */
+    background-color: rgb(40, 40, 40);
+    /* border-bottom: 4px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-style: solid;
+    border-color: #eee;
+    box-shadow: 0px 1px 0px 0px #999; */
+    position: sticky;
+    top: 0;
+    transition: 0.1s;
+}
+
+.button2 {
+    border: solid;
+    padding: 5px;
+    width: 100%;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.button2:hover {
+    border-color: #666;
+    background-color: #666;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.button2:active {
+    border-color: black;
+    background-color: black;
+    color: white;
+}
+
+.switchimageleft {
+    border: 0;
+    background-color: rgba(1, 1, 1, 0.01);
+    height: 100%;
+    width: 5%;
+    content: '\0bb';
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    float: left;
+    color: white;
+}
+
+.switchimageleft:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    background-image: linear-gradient(to right, rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.1))
+}
+
+.switchimageright {
+    border: 0;
+    background-color: rgba(1, 1, 1, 0.01);
+    height: 100%;
+    width: 5%;
+    content: '\0bb';
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    float: right;
+    color: white;
+}
+
+.switchimageright:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgba(20, 20, 20, 0.1), rgba(20, 20, 20, 0.5));
+    transition: 0.5s;
+}
+
+.sineinput {
+    border: solid 2px;
+    border-color: #eee;
+    background-color: inherit;
+    color: #eee;
+    padding: 10px;
+    width: 60px;
+    margin: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.sineinput:hover {
+    box-shadow: 5px 5px 4px #888;
+    transition: 0.5s;
+}
+
+.sineinput:active {
+    box-shadow: 5px 5px 4px #888;
+    background-color: #555;
+    transition: 0.5s;
+}
+
+.totop {
+    padding: 20px;
+    display: none;
+    position: fixed;
+    z-index: 99;
+    right: 0;
+    top: 75%;
+    margin-bottom: 5%;
+    background-color: rgba(60, 60, 60, 0.5);
+    color: white;
+    transition: 0.2s;
+    cursor: pointer;
+    float: right;
+    font-size: 15px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.totop:hover {
+    background-color: rgba(150, 150, 150, 1);
+    color: black;
+}
+
+.totop:active {
+    background-color: white;
+    color: black;
+}
